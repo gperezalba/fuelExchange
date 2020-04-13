@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="/icon.png"/>
+    <title>Intercambio USDT - Gasolina</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+	<h1>Intercambio USDT - Gasolina</h1>
+    <button onclick="App.updateInfo();">Actualizar Info</button>
+    <br>
+    <br>
+    <div id="personalInfo"></div>    
+    <br>
+    <div id="info"></div>
+	<h2>Activar Smart Contract</h2>
+    <button onclick="App.activate();">Activar</button>
+    <br>
+	  <br>
+  <h2>Trasnferir USDT a Smart Contract</h2>
+    <button onclick="App.approve();">Aprobar cobro</button>
+    <br>
+    <br>
+    <div id="allowed"></div>
+    <br>
+    <button onclick="App.transferFrom();">Realizar cobro</button>
+    <br>
+    <br>
+    <a id="etherscanurl" href="url">Ver TX de cobro en Etherscan</a>
+	  <br>
+  <h2>Finalizar intercambio (los fondos se enviarán a la Parte B)</h2>
+    <button onclick="App.finishDeal();">Finalizar</button>
+    <br>
+	  <br>
+  <h2>Cancelar intercambio (los fondos se enviarán a la Parte A)</h2>
+    <button onclick="App.brokeDeal();">Romper</button>
+    <br>
+	  <br>
+  </body>
+</html>
